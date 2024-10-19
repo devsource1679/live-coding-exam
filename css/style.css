@@ -587,10 +587,11 @@ nav ul li a {
 
 .footerheader{
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
     justify-content: space-between;
     width: 90%;
-    padding: 20px;
+    margin: auto;
+    /* padding: 20px 10px; */
     line-height: 1.5em;
     font-size: 15px;
     font-weight: 400;
@@ -605,5 +606,28 @@ nav ul li a {
 }
 
 .footer-text{
-    
+    flex-wrap: wrap;
+}
+
+.footer-text a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #fb651e;
+    border-radius: 10px;
+}
+
+
+/* media quary for footer */
+
+@media(max-width:640px){
+    .footerheader{
+        display: block;
+    }
+}
+
+@media(max-width:640px){
+    .footer-cnt{
+        padding: 20px;
+    }
 }
